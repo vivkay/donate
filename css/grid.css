@@ -1,10 +1,20 @@
-.grid {
-  border: 1px solid red;
+.right-column {
+  border: 1px solid blue;
+  background-color: blue;
   overflow: hidden;
+  float: right;
+  width: 33.333%;
 }
 
-.unit {
-  float: left;
-  width: 50%;
+.left-column {
+  border: 1px solid red;
+  overflow: hidden;
+  width: 66.666%;
   background-color: pink;
+}
+
+
+.gutter {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
