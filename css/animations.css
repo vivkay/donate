@@ -1,0 +1,66 @@
+
+/*Animations*/
+
+/*
+.delay-slide {
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+    -webkit-animation: right-in 1s linear forwards;
+    animation: right-in 1s linear forwards;
+}
+
+@-webkit-keyframes right-in {
+
+    0% {
+        -webkit-transform: translateX(2000px);
+        }
+
+    60% {
+        -webkit-transform: translateX(-10px);
+    }
+
+    70% {
+        -webkit-transform: translateX(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateX(-10px);
+    }
+
+    90% {
+        -webkit-transform: translateX(5px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@keyframes right-in {
+
+    0% {
+        transform: translateX(2000px);
+        }
+
+    60% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(-20px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    90% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+*/

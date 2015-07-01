@@ -14,11 +14,35 @@
 </head>
 <body>
 
-    <header role="hero" class="banner-container">
+  <header role="hero">
+      <div class="hero">
+        <h1 class="giant white">BRING IT</h1>
+        <h3 class="white"><em>FOR A GOOD CAUSE</em></h3>
+        <div class="scroll-btn"></div>
+      </div>
+  </header>
 
-      <div class="banner gray center">
+  <main role ="main">
+
+    <div class="grid">
+
+      <div class="unit">
+        <h1>lorem1</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+
+      <div class="unit">
+        <h1>lorem2</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+
+    </div>
+
+
+<!--
+      <div class="banner black center">
           <div class="title center">
-              <h1 class="giant delay-slide fill shadow small-center small-title">BRING IT</h1>
+              <h1 class="giant text-title center">BRING IT</h1>
           </div>
               <div class="title">
                   <p class="kilo appear small-center pad-b-2">For a great cause</p>
@@ -35,79 +59,9 @@
 
     <main role="main">
 
-    <!--This is the full screen version with toggle panels-->
-        <h2 class="intro navy-type pad-txt island" id="intro">HTML is like the skeleton of your website. It provides the structure, and starts with an overall &lt;body&gt; element that can be then divided into three basic bits: header, main and footer!</h2>
-
-        <div class="grid grid-stretch island-2-media push-r">
-            <div class="unit unit-xs-hidden unit-s-hidden unit-m-1-3 unit-push-m-2-3 unit-l-1-3 unit-push-l-2-3">
-                <ul class="tabs pad-0">
-                    <li class="tab">
-                        <a href="#tab-header">
-                            <img src="img/skel1.svg" alt="header tab" class="tab-img">
-                        </a>
-                    </li>
-                    <li class="tab">
-                        <a href="#tab-body">
-                            <img src="img/skel2.svg" alt="main tab" class="tab-img">
-                        </a>
-                    </li>
-                    <li class="tab">
-                        <a href="#tab-footer">
-                            <img src="img/skel3.svg" alt="footer tab" class="tab-img">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="unit unit-xs-hidden unit-s-hidden unit-m-2-3 unit-pull-m-1-3 unit-l-2-3 unit-pull-m-1-3 pos-rel">
-                <div class="tab-panel js-appear window-txt pos-abs">
-                    <h4> &lt; Click &gt; </h4>
-                    <p>Click one of the panels on the side to learn more.</p>
-                    <img src="img/arrow.svg" class="jiggle arrow" alt="">
-                </div>
-                <div id="tab-header" class="tab-panel window-txt pos-abs">
-                    <h4> &lt; header &gt; </h4>
-                    <p>The entire body of your HTML code starts with a <span class="mint-txt"> &lt; header &gt;</span> element. This is where you put the face of your website: the attractive billboard, descriptive statement and maybe a call-to-action button to prompt visitor interaction!</p>
-                </div>
-                <div id="tab-body" class="tab-panel window-txt pos-abs">
-                    <h4> &lt; main &gt; </h4>
-                    <p>The <span class="mint-txt">&lt; main &gt;</span> part of your code is where you put your core information. This is where you'll find text and links and images–and sometimes some fun animations and transitions! This is where you put the heart and soul of your bunny…I mean website.</p>
-                </div>
-                <div id="tab-footer" class="tab-panel window-txt pos-abs">
-                    <h4> &lt; footer &gt; </h4>
-                    <p class="window-img">Your website will end with a <span class="mint-txt"> &lt; footer &gt;</span> element. This is where you put your copyright information, date and sometimes your contact information. You might also want to add social media links and, if your site is rather large, another navigational menu to help your visitors find the juiciest parts of your site!</p>
-                </div>
-            </div>
-        </div>
-
-         <!--This is the simplified small screen version for mobile-->
-         <div class="grid grid-stretch island-2 center">
-           <div class="unit unit-xs-1 unit-s-1 unit-m-hidden unit-l-hidden">
-              <img src="img/skel1.svg" class="img-border" alt="">
-              <h4 class=""> &lt; header &gt; </h4>
-              <p class="border-bottom pad-b">The entire body of your HTML code starts with a <span class="mint-txt">&lt; header &gt;</span> element. This is where you put the face of your website: the attractive billboard, descriptive statement and maybe a call-to-action button to prompt visitor interaction!</p>
-           </div>
-          <div class="unit unit-xs-1 unit-s-1 unit-m-hidden unit-l-hidden">
-              <img src="img/skel2.svg" class="img-border" alt="">
-              <h4 class="pad-t"> &lt; main &gt; </h4>
-              <p class="border-bottom pad-b">The <span class="mint-txt">&lt; main &gt;</span> part of your code is where you put your core information. This is where you'll find text and links and images–and sometimes some fun animations and transitions! This is where you put the heart and soul of your bunny…I mean website.</p>
-           </div>
-           <div class="unit unit-xs-1 unit-s-1 unit-m-hidden unit-l-hidden">
-              <img src="img/skel3.svg" class="img-border" alt="">
-              <h4 class="pad-t"> &lt; footer &gt; </h4>
-              <p>Your website will end with a <span class="mint-txt">&lt; footer &gt;</span> element. This is where you put your copyright information, date and sometimes your contact information. You might also want to add social media links and, if your site is rather large, another navigational menu to help your visitors find the juiciest parts of your site!</p>
-           </div>
-         </div>
-
-         <!--These are my svg images -->
-          <div class="navy-gradient" id="finale">
-              <div>
-                  <h1 class="yotta fill center pad-t-2">Add some style</h1>
-              </div>
-
-
     </main>
 
-    <footer class="cream">
+    <footer class="red">
         <div class="top-scroll">
                 <a href="#top" class="top-button">Back to top</a>
         </div>
@@ -120,6 +74,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="js/main.js"></script>
+-->
 
 </body>
 </html>

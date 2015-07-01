@@ -1,0 +1,10 @@
+.grid {
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.unit {
+  float: left;
+  width: 50%;
+  background-color: pink;
+}
