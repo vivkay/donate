@@ -26,14 +26,24 @@ body {
 
 
 .banner {
-    background-color: grey;
+    position: relative;
     text-align: center;
-    height: 400px;
+    max-height: 75vh;
     margin: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/*might need to change height to 400px for fixed image?*/
+
+.banner img {
+    width: 100%;
 }
 
 .banner-content {
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .scroll-btn {
@@ -52,7 +62,7 @@ body {
 .img-fix {
     position: fixed;
     top: 0px;
-    z-index: ;
+    z-index: 1;
 }
 
 
