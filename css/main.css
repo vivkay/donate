@@ -76,6 +76,10 @@ li {
     margin-bottom: 15px;
 }
 
+.shadow {
+    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
 
 .swing {
     -webkit-animation: 3s ease 0s normal none infinite swing;

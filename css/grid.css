@@ -1,18 +1,14 @@
 .right-column {
-  border: 1px solid blue;
-  background-color: blue;
   overflow: hidden;
   float: right;
   width: 33.333%;
 }
 
 .left-column {
-  border: 1px solid red;
   overflow: hidden;
   width: 66.666%;
-  background-color: pink;
+    background-color: #F0F0F5;
 }
-
 
 .gutter {
   padding-left: 1.5em;
