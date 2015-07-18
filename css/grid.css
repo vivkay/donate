@@ -10,21 +10,6 @@
 }
 
 .right-column {
-  overflow: hidden;
   float: right;
   width: 33.333%;
-}
-
-.sprite {
-    display: block;
-    width 256px;
-    height: 402px;
-    background-image: transparent url(../images/rappel-sprite-01.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-color: pink;
-}
-
-.sprite:hover {
-    background-position: 0 -402px;
 }
