@@ -175,7 +175,7 @@ body {
     display: block;
     width 256px;
     height: 402px;
-    background-image: transparent url(../images/rappel-sprite-01.png);
+    background-image: url(../images/rappel-sprite-01.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
