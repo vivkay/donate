@@ -1,7 +1,6 @@
-.right-column {
-  overflow: hidden;
-  float: right;
-  width: 33.333%;
+.gutter {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .left-column {
@@ -10,19 +9,23 @@
     background-color: #E8F4F9;
 }
 
-.gutter {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+.right-column {
+  overflow: hidden;
+  float: right;
+  width: 33.333%;
 }
 
 .sprite {
-    width 100px;
-    height: 100px;
-    background-image: url(../images/rappel.png);
+    display: block;
+    width 256px;
+    height: 402px;
+    background-image: transparent url(../images/rappel-sprite-01.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-color: pink;
 }
 
 .sprite:hover {
-    background position: 0 -100;
+    background-position: 0 -402px;
 }
+
