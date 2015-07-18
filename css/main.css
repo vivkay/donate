@@ -171,6 +171,11 @@ body {
     }
 }
 
+.fixed-container {
+    position: fixed;
+    right: 0;
+}
+
 .sprite {
     display: block;
     height: 402px;
