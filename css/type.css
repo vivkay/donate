@@ -1,5 +1,6 @@
+
 html {
-  font: normal 100%/1.5 'Raleway',sans-serif;
+  font: normal 100%/1.5 'Muli',sans-serif;
 }
 
 @media only screen and (min-width: 60em) {
@@ -32,6 +33,34 @@ blockquote, details, hr,
 fieldset, pre, table {
   margin: 0 0 1.5rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Oswald', sans-serif;
+}
+
+p, ul, ol, dl, dd, figure, blockquote, details, hr, fieldset, pre, table {
+    font-family: 'Muli', sans-serif;
+}
+
+/*
+.color-shift {
+    -webkit-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: black; }
+    50% { color: yellow; }
+    100% { color: black; }
+}
+
+@keyframes color-change {
+    0% { color: black; }
+    50% { color: yellow; }
+    100% { color: black; }
+}
+
+*/
 
 .giant {
     font-size: 8rem;
