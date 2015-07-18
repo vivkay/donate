@@ -24,6 +24,16 @@ body {
     margin: 0;
 }
 
+.banner-solid {
+    position: relative;
+    z-index: 2;
+    height: 650px;
+    width: 100%;
+    background-color: #20A5D3;
+    text-align: center;
+}  
+
+/* this is for the banner image if it's a placed image */
 
 .banner {
     position: relative;
@@ -40,11 +50,139 @@ body {
     width: 100%;
 }
 
+.cta-container {
+    margin: 100px;
+}
+
 .banner-content {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
+.text-shadow {
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Text Shadow resource from http://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ and MarkDotto.com */
+
+.sparks {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.appear1 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.appear2 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.appear3 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.sprite {
+    width 100px;
+    height: 100px;
+    background-image: url(../images/rappel.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sprite:hover {
+    background position: 0 -100;
+}
+
 
 .scroll-btn {
     margin: 0 auto;

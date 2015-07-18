@@ -7,7 +7,7 @@
     <link href="css/color.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/type.css" rel="stylesheet">
-    <link href="css/animation.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="favicon.ico" rel="shortcut icon">
     <link href='http://fonts.googleapis.com/css?family=Muli|Oswald' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
@@ -17,28 +17,49 @@
 <!--banner has z-index = 2, fixed image z-index = 1-->
 
   <header role="hero">
-      <div class="banner">
-        <img src="http://placehold.it/1200x650" alt="">
+      <div class="banner-solid"><div>
+          
         <div class="banner-content">
-          <h1 class="giant white"><span class="outline">BE A HERO</h1>
-          <h3 class="white"><em>Help a great cause</em></h3>
-          <div class="scroll-btn"></div>
+            
+            <div class="sparks">
+                <svg xmlns="http://www.w3.org/2000/svg" width="347.8" height="68.1" viewBox="0 0 347.8 68.1">
+              <path class="appear1" d="M41.7 60.9c-9.5-13.5-20.5-25.7-33-36.5-4.9-4.2-12 2.9-7.1 7.1C13.5 41.7 24 53.2 33.1 65.9c3.6 5.2 12.3.2 8.6-5z" fill="#FFFF94"/>
+              <path class="appear2" d="M184.4 58.6c1-18.6-.7-37.2-5-55.3-1.3-5.7-10.2-3.3-8.8 2.4 4.1 17.4 5.6 35.1 4.6 52.9-.3 5.9 8.9 5.9 9.2 0z" fill="#FFFF94"/>
+              <path class="appear3" d="M328.9 59c3.5-15.1 9.5-29.2 18-42.1 3.5-5.4-5.1-10.4-8.6-5-8.9 13.6-15.4 28.7-19.1 44.5-1.4 6.2 8.3 8.9 9.7 2.6z" fill="#FFFF94"/>
+            </svg>
+              </div>
+
+            <div class="cta-container">
+              <h1 class="giant white text-shadow"><span class="outline">BE A HERO</h1>
+              <h3 class="white"><em>Help support a super awesome cause!</em></h3>
+              <div class="scroll-btn"></div>
+            </div>
         </div>
+            
       </div>
   </header>
 
   <main role ="main">
 
+      
+<!--
     <div class="right-column">
       <img class="img-fix img-flex swing" src="images/rappel.png" alt="">
     </div>
-
+-->
+      
+      
+    <div class="rightcolumn">
+      <div class="sprite"></div>
+    </div>
+      
+    
     <div class="left-column">
 
       <div class="gutter">
-        <h1 class="color-shift">The Goal</h1>
-        <h5>To raise <b>$1500</b> for the Canadian Easter Seals charity by September 15th.</h5>
-          <p>If I reach this target, I will join the Superhero fundraisers and rappell off a 19-storey building downtown, dressed as a superhero!</p>
+        <h1>The Goal</h1>
+        <h5>To raise <b>$1500</b> to help support children with physical disabilities through the Canadian Easter Seals charity.</h5>
+          <p>If you help me reach this target, I'll face my fear and rappell off a 19-storey building downtown – and I'll do it dressed as a superhero!</p>
       </div>
 
       <div class="gutter">
@@ -53,7 +74,7 @@
       </div>
 
       <div class="gutter">
-        <h1>The Superhero Challenge</h1>
+        <h1 class="animate tada">The Superhero Challenge</h1>
         <p>If I reach the fundraising target of $1500, I will join the Easter Seals Drop Zone Superheroes On Monday, September 21 to rappel 19 storeys down the Morguard building (280 Slater St, Ottawa). This will be the 5th annual Drop Zone Ottawa presented by Morguard to raise funds for children and youth with physical disabilities.</p>
       </div>
         
@@ -101,6 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="js/main.js"></script>
 -->
+      
 
 </body>
 </html>

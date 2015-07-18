@@ -7,10 +7,22 @@
 .left-column {
   overflow: hidden;
   width: 66.666%;
-    background-color: #F0F0F5;
+    background-color: #E8F4F9;
 }
 
 .gutter {
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+.sprite {
+    width 100px;
+    height: 100px;
+    background-image: url(../images/rappel.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sprite:hover {
+    background position: 0 -100;
 }
