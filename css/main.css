@@ -226,10 +226,12 @@ body {
 
 .scroll-btn {
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid white;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.scroll {
+    height: 20px;
 }
 
 .img-flex {

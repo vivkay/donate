@@ -112,6 +112,35 @@
 }
 
 
+.bounce {
+    -webkit-animation: bounce 1s linear alternate infinite;
+    animation: bounce 1s linear alternate infinite;
+}
+
+@-webkit-keyframes bounce {
+
+    0% {
+        -webkit-transform: translateY(20px)
+    }
+
+    100% {
+        -webkit-transform: translateY(30px)
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(30px)
+    }
+}
+
+
+
 /*Animations*/
 
 /*
