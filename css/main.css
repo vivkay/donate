@@ -173,15 +173,17 @@ body {
 
 .sprite {
     display: block;
-    width 256px;
     height: 402px;
-    background-image: url(../images/rappel-sprite-01.png);
+    background-image: url(../images/rappel-sprite.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+    
 }
 
 .sprite:hover {
-    background-position: 0 -402px;
+    background-position: 0 -400px;
 }
 
 
