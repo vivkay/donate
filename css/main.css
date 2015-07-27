@@ -27,11 +27,11 @@ body {
 .banner-solid {
     position: relative;
     z-index: 2;
-    height: 650px;
+    height: 600px;
     width: 100%;
     background-color: #20A5D3;
     text-align: center;
-}  
+}
 
 /* this is for the banner image if it's a placed image */
 
@@ -51,7 +51,7 @@ body {
 }
 
 .cta-container {
-    margin: 100px;
+    margin: 50px 100px;
 }
 
 .banner-content {
@@ -61,7 +61,7 @@ body {
 }
 
 .text-shadow {
-    text-shadow: 0 1px 0 #ccc, 
+    text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -80,7 +80,7 @@ body {
 .sparks {
     position: absolute;
     width: 100%;
-    top: 0;
+    top: -50px;
 }
 
 .appear1 {
@@ -171,28 +171,89 @@ body {
     }
 }
 
-.cta1 {
-    color: red;
+.cta-tag {
+    padding-bottom: 2rem;
 }
-    
-.cta1:hover {
-	background-color:#329ec2;
+
+.cta-btn-1 {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, .25);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
 }
-    
-.cta1:active {
+
+.cta-btn-1:hover {
+	background-color: #329ec2;
+}
+
+.cta-btn-1:active {
 	position:relative;
-	top:1px;
+    background-color: rgba(255, 255, 255, .6);
+    color: #20A5D3;
+	top: 3px;
 }
 
+.cta-btn-2 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
 
+.cta-btn-2:hover {
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+    border-radius: 10px;
+}
 
-
+.cta-btn-2:active {
+    position:relative;
+    background-color: rgba(255, 255, 255, .6);
+    color: red;
+    top: 3px;
+}
 .fixed-container {
     position: fixed;
     right: 0;
 }
 
+.color-change {
+    -webkit-animation: color-change 3s infinite alternate;
+    -moz-animation: color-change 3s infinite alternate;
+    -ms-animation: color-change 3s infinite alternate;
+    -o-animation: color-change 3s infinite alternate;
+    animation: color-change 3s infinite alternate;
+}
+
+@-webkit-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-moz-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-ms-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-o-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+
+/*
 .sprite {
+    z-index: 5;
     display: block;
     height: 402px;
     background-image: url(../images/rappel-sprite.svg);
@@ -200,12 +261,14 @@ body {
     background-position: 0 0;
     -webkit-animation: 3s ease 0s normal none infinite swing;
     -webkit-transform-origin: center top;
-    
+
 }
 
 .sprite:hover {
     background-position: 0 -400px;
 }
+
+*/
 
 .swing {
     -webkit-animation: 3s ease 0s normal none infinite swing;
@@ -223,7 +286,7 @@ body {
 100%{
    transform: rotate(5deg);
  }
-    
+
 }
 @-webkit-keyframes swing {
  0% {
@@ -238,13 +301,18 @@ body {
 }
 
 .scroll-btn {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 5em;
+    bottom: 10px;
+    margin: 2em auto;
+    border: 2px dotted;
+    border-color: rgba(255, 255, 255, .2);
+    border-radius: 100px;
+    background-color: #20A5D3;
+    height: 50px;
+    width: 50px;
 }
 
 .scroll {
-    height: 20px;
+    height: 18px;
 }
 
 .img-flex {
@@ -272,6 +340,14 @@ li {
 .shadow {
     box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+footer {
+    text-align: center;
+    background-color: #20A5D3;
+    color: white;
+    height: 30%;
+    padding: 1rem;
 }
 
 

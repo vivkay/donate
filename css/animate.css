@@ -124,7 +124,7 @@
     }
 
     100% {
-        -webkit-transform: translateY(30px)
+        -webkit-transform: translateY(15px)
     }
 }
 
@@ -135,7 +135,7 @@
     }
 
     100% {
-        transform: translateY(30px)
+        transform: translateY(15px)
     }
 }
 

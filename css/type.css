@@ -36,6 +36,7 @@ fieldset, pre, table {
 
 h1, h2, h3, h4, h5, h6 {
    font-family: 'Oswald', sans-serif;
+   color: #20A5D3;
 }
 
 p, ul, ol, dl, dd, figure, blockquote, details, hr, fieldset, pre, table {
