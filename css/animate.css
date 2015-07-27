@@ -1,3 +1,35 @@
+.slide-left {
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+    -webkit-animation: right-in 2s linear forwards;
+    animation: right-in 2s linear forwards;
+}
+
+@-webkit-keyframes right-in {
+
+    0% {
+        -webkit-transform: translateX(1000px);
+        }
+
+    1000% {
+        -webkit-transform: translateX(-1000px);
+    }
+
+}
+
+@keyframes right-in {
+
+    0% {
+        transform: translateX(1000px);
+        }
+
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+
+
 /* tada animation from https://daneden.github.io/animate.css/ */
 
 .animate {

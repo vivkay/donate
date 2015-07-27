@@ -83,6 +83,36 @@ body {
     top: -50px;
 }
 
+.appear-delay {
+    opacity: 0;
+    -webkit-animation: appear-delay 3s linear forwards;
+    animation: appear-delay 3s linear forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes appear-delay {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear-delay {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
 .appear1 {
     opacity: 0;
     -webkit-animation: appear .25s linear forwards;
@@ -169,6 +199,11 @@ body {
     100% {
         opacity: 100;
     }
+}
+
+.flying {
+    position: absolute;
+    top: 45%;
 }
 
 .cta-tag {
@@ -331,6 +366,13 @@ body {
     margin-right: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.btn-buffer {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 li {
