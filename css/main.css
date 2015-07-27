@@ -337,7 +337,7 @@ body {
 
 .scroll-btn {
     bottom: 10px;
-    margin: 2em auto;
+    margin: 2.5em auto;
     border: 2px dotted;
     border-color: rgba(255, 255, 255, .2);
     border-radius: 100px;
@@ -384,12 +384,34 @@ li {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
 }
 
+.elves {
+    width: 80%;
+    margin: 0 auto;
+}
+
 footer {
-    text-align: center;
     background-color: #20A5D3;
     color: white;
     height: 30%;
     padding: 1rem;
+}
+
+.logos {
+    text-align: center;
+}
+
+.es-logo {
+    height: 100px;
+    width: auto;
+    display: inline-block;
+}
+
+.dz-logo {
+    padding-bottom: 10px;
+    margin-left: 2em;
+    height: 80px;
+    width: auto;
+    display: inline-block;
 }
 
 
