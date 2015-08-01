@@ -24,6 +24,26 @@ body {
     margin: 0;
 }
 
+.block {
+    display: block;
+}
+
+.hero {
+    background-color: #20A5D3;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.button {
+    bottom: 100px;
+    background-color: red;
+    border: 1px solid yellow;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: inline-block;
+}
+
 /* These control hero banner colour and behaviour as a parent element */
 
 .banner-solid {
@@ -81,6 +101,7 @@ body {
 }
 
 .cta-btn-1 {
+    display: inline-block;
     font-size: 1.25em;
     text-decoration: none;
     color: white;
@@ -88,6 +109,7 @@ body {
     padding: 20px;
     border: 3px solid white;
     border-radius: 10px;
+    margin-bottom: 2em;
 }
 
 .cta-btn-1:hover {
@@ -142,21 +164,22 @@ body {
 
 .side-graphic-sml {
     margin-left: 35%;
-    margin-top: -20px;
-    z-index: 0;
+    margin-top: -15px;
+    z-index: -1;
     display: block;
     height: 250px;
     width: auto;
     background-image: url("../images/rappel.png");
     background-repeat: no-repeat;
     background-size: 150px;
+    position: relative;
     -webkit-animation: 3s ease 0s normal none infinite swing;
     -webkit-transform-origin: center top;
 }
 
 .side-graphic {
+    z-index: -1;
     margin-top: -10px;
-    z-index: 0;
     height: 533px;
     width: 20%;
     background-image: url("../images/rappel.png");
