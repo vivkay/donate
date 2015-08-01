@@ -24,40 +24,28 @@ body {
     margin: 0;
 }
 
+/* These control hero banner colour and behaviour as a parent element */
+
 .banner-solid {
     position: relative;
     z-index: 2;
-    height: 600px;
-    width: 100%;
+    height: 90vh;
+    width: auto;
     background-color: #20A5D3;
     text-align: center;
-}
-
-/* this is for the banner image if it's a placed image */
-
-.banner {
-    position: relative;
-    text-align: center;
-    max-height: 75vh;
-    margin: 0;
-    overflow: hidden;
-    z-index: 2;
-}
-
-/*might need to change height to 400px for fixed image?*/
-
-.banner img {
-    width: 100%;
-}
-
-.cta-container {
-    margin: 50px 100px;
+    padding: 4em;
 }
 
 .banner-content {
     position: absolute;
-    bottom: 0;
     width: 100%;
+    text-align: center;
+}
+
+/* End hero banner background & behaviour styling */
+
+.push-top {
+    margin-top: 1em;
 }
 
 .text-shadow {
@@ -77,140 +65,23 @@ body {
 
 /* Text Shadow resource from http://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ and MarkDotto.com */
 
-.sparks {
-    position: absolute;
-    width: 100%;
-    top: -50px;
-}
+/*sparks code in animate.css*/
 
-.appear-delay {
-    opacity: 0;
-    -webkit-animation: appear-delay 3s linear forwards;
-    animation: appear-delay 3s linear forwards;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
 
-@-webkit-keyframes appear-delay {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-@keyframes appear-delay {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-.appear1 {
-    opacity: 0;
-    -webkit-animation: appear .25s linear forwards;
-    animation: appear .25s linear forwards;
-}
-
-@-webkit-keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-@keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-.appear2 {
-    opacity: 0;
-    -webkit-animation: appear .25s linear forwards;
-    animation: appear .25s linear forwards;
-    -webkit-animation-delay: .25s;
-    animation-delay: .25s;
-}
-
-@-webkit-keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-@keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-.appear3 {
-    opacity: 0;
-    -webkit-animation: appear .25s linear forwards;
-    animation: appear .25s linear forwards;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-}
-
-@-webkit-keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-@keyframes appear {
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
+/* flying character animation in animate.css */
 .flying {
     position: absolute;
-    top: 45%;
 }
 
 .cta-tag {
+    font-size: 1.75em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding-bottom: 2rem;
 }
 
 .cta-btn-1 {
+    font-size: 1.25em;
     text-decoration: none;
     color: white;
     background-color: rgba(255, 255, 255, .25);
@@ -230,19 +101,35 @@ body {
 	top: 3px;
 }
 
+.btn-buffer {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
 .cta-btn-2 {
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: white;
-    background-color: red;
-    padding: 20px;
-    border: 3px solid white;
+    color: red;
+    background-color: white;
+    padding: 1em;
+    height: 7em;
+    border: 4px solid red;
     border-radius: 10px;
+    -webkit-animation: color-change 3s infinite alternate;
+    -moz-animation: color-change 3s infinite alternate;
+    -ms-animation: color-change 3s infinite alternate;
+    -o-animation: color-change 3s infinite alternate;
+    animation: color-change 3s infinite alternate;
 }
 
 .cta-btn-2:hover {
-    background-color: white;
-    color: red;
-    border: 3px solid red;
+    background-color: red;
+    color: white;
+    border: 3px solid white;
     border-radius: 10px;
 }
 
@@ -251,10 +138,6 @@ body {
     background-color: rgba(255, 255, 255, .6);
     color: red;
     top: 3px;
-}
-.fixed-container {
-    position: fixed;
-    right: 0;
 }
 
 .side-graphic {
@@ -276,35 +159,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.color-change {
-    -webkit-animation: color-change 3s infinite alternate;
-    -moz-animation: color-change 3s infinite alternate;
-    -ms-animation: color-change 3s infinite alternate;
-    -o-animation: color-change 3s infinite alternate;
-    animation: color-change 3s infinite alternate;
-}
-
-@-webkit-keyframes color-change {
-    from { color: #20A5D3; }
-    to { color: #FF3300; }
-}
-@-moz-keyframes color-change {
-    from { color: #20A5D3; }
-    to { color: #FF3300; }
-}
-@-ms-keyframes color-change {
-    from { color: #20A5D3; }
-    to { color: #FF3300; }
-}
-@-o-keyframes color-change {
-    from { color: #20A5D3; }
-    to { color: #FF3300; }
-}
-@keyframes color-change {
-    from { color: #20A5D3; }
-    to { color: #FF3300; }
-}
-
 /*
 .sprite {
     z-index: 5;
@@ -323,6 +177,28 @@ body {
 }
 
 */
+
+.scroll-btn {
+    bottom: 10px;
+    margin: 2.5em auto;
+    height: 50px;
+    width: 50px;
+}
+
+.arrow-down {
+    margin: 2.5em auto;
+    opacity: .5;
+    position: absolute;
+    bottom: 1%;
+    left: calc(50% - 20px);
+    z-index: 4;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+}
+
 
 .swing {
     -webkit-animation: 3s ease 0s normal none infinite swing;
@@ -355,16 +231,6 @@ body {
 }
 
 
-.scroll-btn {
-    bottom: 10px;
-    margin: 2.5em auto;
-    border: 2px dotted;
-    border-color: rgba(255, 255, 255, .2);
-    border-radius: 100px;
-    background-color: #20A5D3;
-    height: 50px;
-    width: 50px;
-}
 
 .scroll {
     height: 18px;
@@ -388,13 +254,6 @@ body {
     margin-bottom: 2em;
 }
 
-.btn-buffer {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 4em;
-    margin-bottom: 4em;
-}
-
 li {
     margin-bottom: 15px;
 }
@@ -405,7 +264,9 @@ li {
 }
 
 .elves {
-    width: 80%;
+    padding-bottom: .5em;
+    text-align: center;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -433,357 +294,3 @@ footer {
     width: auto;
     display: inline-block;
 }
-
-
-/*
-header {
-    margin: 0;
-}
-
-body {
-    margin: 0;
-}
-
-.black {
-    background-color: black;
-}
-
-.center {
-    text-align: center;
-}
-
-.banner-container {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.banner {
-    position: absolute;
-    height: 400px;
-    width: 100%;
-}
-
-.text-title {
-    position: absolute;
-    display: inline;
-    color: white;
-    font-size: 4rem;
-    margin-bottom: 0.4rem;
-    text-align: center;
-}
-
-.small-center {
-        text-align: center;
-}
-
-.button-scroll {
-    position: absolute;
-    text-align: center;
-    bottom: -380px;
-    border: 2px solid #fff;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-size: 1rem;
-    font-family: "raleway", sans-serif;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: transparent;
-    margin: 0;
-}
-
-.button-scroll:hover {
-    cursor: pointer;
-    border: 5px solid #fff;
-    background-color: rgba(255, 255, 255, .2);
-}
-
-
-
-footer {
-    text-align: center;
-}
-
-
-.red {
-    background-color: red;
-}
-
-.top-button {
-    background-color: #89CDC2;
-    color: white;
-    border-radius: 5px;
-    padding: 15px 20px;
-    width: 10rem;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 2rem;
-}
-
-.panel {
-    max-height: 0em;
-    overflow: hidden;
-    transition: all 250ms ease-out;
-}
-
-.js-panel-open {
-    display: block;
-    max-height: 20em;
-}
-
-.ham-btn {
-    height: 1.5rem;
-    width: 2.5rem;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    top: 1rem;
-    left: 5%;
-    background: transparent url("../img/hamburger.svg") no-repeat center center;
-    z-index: 100;
-    padding: 0;
-    margin: 20px;
-    border: 0;
-    outline-color: #E1D6C3;
-}
-
-.ham-btn {
-    background-color: #FAF6E2;
-}
-
-nav {
- padding: 0;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid #E1D6C3;
-}
-
-nav li {
-    background-color: #FAF6E2;
-    border-bottom: 1px solid #E1D6C3;
-    text-decoration: none;
-    list-style: none;
-}
-
-nav a {
-    display: block;
-    text-decoration: none;
-    color: #282C4E;
-    width: 100%;
-    padding: 25px;
-}
-
-nav a:hover {
-    background-color: #E1D6C3;
-}
-
-.tab-img {
-    width: 140px;
-    height: 140px;
-    border: 10px solid #FAF6E2;
-    border-left: 0;
-}
-
-.js-current .tab-img {
-    border-color: #E1D6C3;
-}
-
-.window-txt {
-    width: 100%;
-    height: 435px;
-    text-align: center;
-    border: 20px solid #E1D6C3;
-    padding-top: 30px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.tab {
-    list-style: none;
-    padding: 0;
-}
-
-.pad-0 {
-    padding: 0;
-}
-
-.pad-txt {
-    padding-top: 100px;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.pad-txt-2 {
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.push-r {
-  margin-left: 5rem;
-}
-
-.img-border {
-    border: 10px solid #FAF6E2;
-    text-align: center;
-}
-
-.center{
-    text-align: center;
-}
-
-.border-bottom {
-    border-bottom: 2px dotted #E1D6C3;
-    margin-bottom: 1em;
-}
-
-.tab-panel h4,
-.tab-panel p,
-.tab-panel img {
-    opacity: 0;
-    transition: all 200ms linear;
-}
-
-.js-appear h4,
-.js-appear p,
-.js-appear img {
-    opacity: 1;
-}
-
-.pos-rel {
-    position: relative;
-}
-
-.pos-abs {
-    position: absolute;
-}
-
-.red {
-    background-color: red;
-}
-
-.top-scroll{
-    text-align: center;
-}
-
-.island-2-media {
-  padding: 3.0000rem;
-}
-
-a:focus {
-    outline: 3px dotted #89CDC2;
-}
-
-.skip-links a {
-    position: absolute;
-    top: -3em;
-}
-
-.skip-links a:focus {
-    top: 0;
-}
-
-.transform {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-
-.cream {
-    background-color: #FAF6E2;
-}
-
-.sand {
-    background-color: #E1D6C3;
-}
-
-.sand-txt {
-  color: #E1D6C3;
-}
-
-.mint {
-    background-color: #89CDC2;
-}
-
-.mint-txt {
-  color: #89CDC2;
-}
-
-.coral {
-    background-color: #E9625A;
-}
-
-.coral-type {
-    color: #E9625A;
-}
-
-.cherry-wood {
-    background-color: #895953;
-}
-
-.navy {
-    background-color: #282C4E;
-}
-
-.nautical-blue {
-    background-color: #457BBD;
-}
-
-.navy-gradient {
-   background-image: radial-gradient(#282C4E, black);
-}
-
-.white-txt {
-  color: white;
-}
-
-
-@media only screen and (min-width: 25em) {
-    .small-title {
-            font-size: 6rem;
-        }
-
-    .island-2-media {
-        padding: 0;
-    }
-
-}
-
-@media only screen and (min-width: 38em) {
-    .arrow {
-    height: 30%;
-    }
-
-
-    .small-center {
-        text-align: left;
-    }
-
-    .small-title {
-        font-size: 8rem;
-    }
-
-    .island-2-media {
-      padding: 3.0000rem;
-    }
-
-}
-
-@media only screen and (min-width: 60em) {
-
-    .arrow {
-        height: 50%;
-    }
-
-
-}
-
-*/

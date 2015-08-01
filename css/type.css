@@ -63,6 +63,10 @@ p, ul, ol, dl, dd, figure, blockquote, details, hr, fieldset, pre, table {
 
 */
 
+.italics {
+  font-style: italic;
+}
+
 .white {
     color: white;
 }
@@ -77,6 +81,10 @@ p, ul, ol, dl, dd, figure, blockquote, details, hr, fieldset, pre, table {
     line-height: 1.5;
     font-weight: normal;
     margin-bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .kilo2 {
@@ -132,6 +140,11 @@ small, .milli {
 .micro {
   font-size: 0.7901rem;
   line-height: 1.8984;
+}
+
+p {
+    font-size: 1.25rem;
+  line-height: 1.5000;
 }
 
 sub,
