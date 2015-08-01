@@ -140,7 +140,22 @@ body {
     top: 3px;
 }
 
+.side-graphic-sml {
+    margin-left: 30%;
+    margin-top: -20px;
+    z-index: 0;
+    display: block;
+    height: 250px;
+    width: auto;
+    background-image: url("../images/rappel.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+}
+
 .side-graphic {
+    margin-top: -10px;
     z-index: 0;
     height: 533px;
     width: 20%;
@@ -198,39 +213,6 @@ body {
     border-right: 20px solid transparent;
     border-top: 20px solid white;
 }
-
-
-.swing {
-    -webkit-animation: 3s ease 0s normal none infinite swing;
-    -webkit-transform-origin: center top;
-}
-
-@-webkit-keyframes swing {
-     0% {
-       -webkit-transform: rotate(5deg);
-     }
-     50% {
-       -webkit-transform: rotate(-5deg);
-     }
-    100%{
-       -webkit-transform: rotate(5deg);
-     }
-}
-
-
-@keyframes swing {
-     0% {
-       transform: rotate(5deg);
-     }
-     50% {
-       transform: rotate(-5deg);
-     }
-    100%{
-       transform: rotate(5deg);
-     }
-}
-
-
 
 .scroll {
     height: 18px;
