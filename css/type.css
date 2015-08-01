@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
    color: #20A5D3;
 }
 
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
 p, ul, ol, dl, dd, figure, blockquote, details, hr, fieldset, pre, table {
     font-family: 'Muli', sans-serif;
 }
