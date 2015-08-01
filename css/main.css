@@ -155,7 +155,7 @@ body {
     border-radius: 10px;
 }
 
-.cta-btn-sml:hover {
+.cta-btn-sml:active{
     height: auto;
     padding: 1em;
     display: block;
