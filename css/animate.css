@@ -7,6 +7,12 @@
     padding: 1em;
 }
 
+.sparks-sml {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em;
+}
+
 .appear-delay {
     opacity: 0;
     -webkit-animation: appear-delay 3s linear forwards;
@@ -128,8 +134,8 @@
 /* This is the flying superhero character in the hero */
 
 .slide-left {
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
+    -webkit-transform: translateX(2500px);
+    transform: translateX(2500px);
     -webkit-animation: right-in 5s linear forwards;
     animation: right-in 5s linear forwards;
 }
@@ -137,7 +143,7 @@
 @-webkit-keyframes right-in {
 
     0% {
-        -webkit-transform: translateX(2000px);
+        -webkit-transform: translateX(2500px);
         }
 
     5% {
@@ -157,7 +163,7 @@
      }
 
     100% {
-        -webkit-transform: translateX(-2000px);
+        -webkit-transform: translateX(-2500px);
     }
 
 }
@@ -165,7 +171,7 @@
 @keyframes right-in {
 
     0% {
-        transform: translateX(2000px);
+        transform: translateX(2500px);
         }
 
     5% {
@@ -185,7 +191,7 @@
      }
 
     100% {
-        transform: translateX(-2000px);
+        transform: translateX(-2500px);
     }
 }
 
@@ -193,10 +199,10 @@
 
 
 .slide-left-sml {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    -webkit-animation: right-in-sml 5s linear forwards;
-    animation: right-in-sml 5s linear forwards;
+    -webkit-transform: translateX(800px);
+    transform: translateX(800px);
+    -webkit-animation: right-in-sml 3.25s linear forwards;
+    animation: right-in-sml 3.25s linear forwards;
 }
 
 @-webkit-keyframes right-in-sml {
