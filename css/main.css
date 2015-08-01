@@ -141,7 +141,7 @@ body {
 }
 
 .side-graphic-sml {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: -20px;
     z-index: 0;
     display: block;
@@ -161,7 +161,7 @@ body {
     width: 20%;
     background-image: url("../images/rappel.png");
     position: fixed;
-    right: 10%;
+    right: 5%;
     top: 0;
     background-repeat: no-repeat;
     background-size: 100%;

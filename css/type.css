@@ -119,7 +119,7 @@ h3, .tera {
 
 h4, .giga {
   font-size: 1.2656rem;
-  line-height: 1.1852;
+  line-height: 1.8rem;
 }
 
 h5, .mega {
@@ -258,6 +258,10 @@ sub {
 
 .island {
   padding: 1.5rem;
+}
+
+.part-island-2 {
+  padding: 3rem 3rem 0 3rem;
 }
 
 .island-double, .island-2 {
