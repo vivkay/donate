@@ -1,18 +1,20 @@
 .slide-left {
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
-    -webkit-animation: right-in 2s linear forwards;
-    animation: right-in 2s linear forwards;
+    -webkit-animation: right-in 5s linear forwards;
+    animation: right-in 5s linear forwards;
 }
 
 @-webkit-keyframes right-in {
 
     0% {
-        -webkit-transform: translateX(1000px);
+        -webkit-transform: translateX(-2000px);
         }
 
-    1000% {
-        -webkit-transform: translateX(-1000px);
+
+
+    100% {
+        -webkit-transform: translateX(-2000px);
     }
 
 }
@@ -20,11 +22,27 @@
 @keyframes right-in {
 
     0% {
-        transform: translateX(1000px);
+        transform: translateX(2000px);
         }
 
+    5% {
+        transform: translateX(800px);
+    }
+
+    50% {
+      transform: translateX(100px);
+    }
+
+     60% {
+        transform: translate(200px);
+     }
+
+     70% {
+        transform: translate(-1000px);
+     }
+
     100% {
-        transform: translateX(-1000px);
+        transform: translateX(-2000px);
     }
 }
 

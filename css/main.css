@@ -87,8 +87,8 @@ body {
     opacity: 0;
     -webkit-animation: appear-delay 3s linear forwards;
     animation: appear-delay 3s linear forwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 @-webkit-keyframes appear-delay {
@@ -257,6 +257,25 @@ body {
     right: 0;
 }
 
+.side-graphic {
+    z-index: 0;
+    height: 533px;
+    width: 20%;
+    background-image: url("../images/rappel.png");
+    position: fixed;
+    right: 10%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+}
+
+.side-graphic:hover {
+    background-image: url("../images/rappel2.png");
+    background-repeat: no-repeat;
+}
+
 .color-change {
     -webkit-animation: color-change 3s infinite alternate;
     -moz-animation: color-change 3s infinite alternate;
@@ -310,30 +329,31 @@ body {
     -webkit-transform-origin: center top;
 }
 
+@-webkit-keyframes swing {
+     0% {
+       -webkit-transform: rotate(5deg);
+     }
+     50% {
+       -webkit-transform: rotate(-5deg);
+     }
+    100%{
+       -webkit-transform: rotate(5deg);
+     }
+}
+
 
 @keyframes swing {
- 0% {
-   transform: rotate(5deg);
- }
- 50% {
-   transform: rotate(-5deg);
- }
-100%{
-   transform: rotate(5deg);
- }
+     0% {
+       transform: rotate(5deg);
+     }
+     50% {
+       transform: rotate(-5deg);
+     }
+    100%{
+       transform: rotate(5deg);
+     }
+}
 
-}
-@-webkit-keyframes swing {
- 0% {
-   -webkit-transform: rotate(5deg);
- }
- 50% {
-   -webkit-transform: rotate(-5deg);
- }
-100%{
-   -webkit-transform: rotate(5deg);
- }
-}
 
 .scroll-btn {
     bottom: 10px;
